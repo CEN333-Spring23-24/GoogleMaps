@@ -1,0 +1,19 @@
+<m-container>
+  <button class="pure-button" (click)="zoomin()">
+    Zoom In
+  </button>
+  <button class="pure-button" (click)="zoomout()">
+    Zoom Out
+  </button>
+  <button class="pure-button" (click)="useCase3()">
+    Use Case
+  </button>
+  <m-map
+    [initialZoomLevel]="initZoom"
+    [initialLat]="initLat"
+    [initialLng]="initLng"
+    (mapInstance)="getMapInstance($event)"
+  >
+  </m-map>
+</m-container>
+
